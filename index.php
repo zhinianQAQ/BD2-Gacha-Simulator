@@ -228,7 +228,7 @@ $upRole = [
     'star' => $_GET['up_star'] ?? 'star5',
     'file' => $up_file  // 使用转换后的真实文件名
 ];
-$upProb = 4;
+$upProb = 1.5;
 $other5StarProb = $prob['star5'] - $upProb;
 
 // 横屏 16:9 背景
