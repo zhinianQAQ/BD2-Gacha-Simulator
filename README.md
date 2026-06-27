@@ -5,3 +5,13 @@
 /index.php?user_id=100001&up_star=star5&up_file=奇迹海洋
 ```
 <img width="1743" height="982" alt="image" src="https://github.com/user-attachments/assets/58c1dc52-6915-4c4d-abda-52e348b245ea" />
+<br>可使用BOT在QQ群等平台使用。
+<br><a href="https://github.com/Sora233/DDBOT">DDBOT</a>使用示例模板
+```bash
+{{ if .args }}{{ $0 := index .member_code }}{{ $1 := index .args 0 }}
+{{- printf "http://zhinian/ck/bd2/index.php?user_id=%v&up_star=star5&up_file=%v" $0 $1  | pic }}
+{{- else -}}
+{{ $0 := index .member_code }}
+{{ printf "http://zhinian/ck/bd2/index.php?user_id=%v" $0 | pic }}
+{{- end -}}
+```
