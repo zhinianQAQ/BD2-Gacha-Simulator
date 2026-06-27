@@ -17,3 +17,4 @@
 {{ printf "http://zhinian/ck/bd2/index.php?user_id=%v" $0 | pic }}
 {{- end -}}
 ```
+<img width="854" height="531" alt="image" src="https://github.com/user-attachments/assets/afe1d68e-d5e2-4436-af3a-8b0a77d5e4d8" />
