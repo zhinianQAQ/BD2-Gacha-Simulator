@@ -11,10 +11,10 @@
 
 ```bash
 {{ if .args }}{{ $0 := index .member_code }}{{ $1 := index .args 0 }}
-{{- printf "http://zhinian/ck/bd2/index.php?user_id=%v&up_star=star5&up_file=%v" $0 $1  | pic }}
+{{- printf "/index.php?user_id=%v&up_star=star5&up_file=%v" $0 $1  | pic }}
 {{- else -}}
 {{ $0 := index .member_code }}
-{{ printf "http://zhinian/ck/bd2/index.php?user_id=%v" $0 | pic }}
+{{ printf "/index.php?user_id=%v" $0 | pic }}
 {{- end -}}
 ```
 <img width="854" height="531" alt="image" src="https://github.com/user-attachments/assets/afe1d68e-d5e2-4436-af3a-8b0a77d5e4d8" />
