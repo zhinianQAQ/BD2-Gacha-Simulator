@@ -8,6 +8,7 @@
 <br>可使用BOT在QQ群等平台使用。
 <br>在<a href="https://github.com/Sora233/DDBOT">DDBOT</a>项目中使用示例模板
 <br>
+
 ```bash
 {{ if .args }}{{ $0 := index .member_code }}{{ $1 := index .args 0 }}
 {{- printf "http://zhinian/ck/bd2/index.php?user_id=%v&up_star=star5&up_file=%v" $0 $1  | pic }}
